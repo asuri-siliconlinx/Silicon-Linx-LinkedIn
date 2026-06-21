@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" width="400" height="80">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;display=swap');
+      text { font-family: 'DM Serif Display', serif; }
+    </style>
+  </defs>
+  <text x="0" y="56" font-size="48" fill="#D4A853" font-style="italic">AI</text>
+  <text x="70" y="56" font-size="48" fill="#0A0E1A" font-weight="400">Suri</text>
+</svg>

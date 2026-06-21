@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Silicon Linx — LinkedIn Banner</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=General+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #1a1a2e; display: flex; flex-direction: column; align-items: center; padding: 60px 20px; gap: 40px; }
+
+    .banner-wrapper { position: relative; width: 1128px; height: 191px; }
+
+    /* The actual banner */
+    .banner {
+      width: 1128px; height: 191px; border-radius: 8px; overflow: hidden; position: relative;
+      background: #0A0E1A;
+    }
+
+    /* Subtle radial glow */
+    .banner::before {
+      content: ''; position: absolute; top: -60px; right: -60px;
+      width: 500px; height: 380px;
+      background: radial-gradient(ellipse at center, rgba(212,168,83,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Gold accent bar — top */
+    .accent-bar {
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, #D4A853 0%, rgba(212,168,83,0.3) 60%, transparent 100%);
+    }
+
+    /* Logo area */
+    .logo-area {
+      position: absolute; left: 48px; top: 50%; transform: translateY(-50%);
+      display: flex; align-items: center; gap: 16px;
+    }
+    .sl-mark {
+      width: 44px; height: 44px; border-radius: 10px;
+      background: linear-gradient(135deg, #D4A853, #C49A3C);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .sl-mark span {
+      font-family: 'General Sans', sans-serif; font-weight: 700; font-size: 18px; color: #0A0E1A;
+    }
+    .company-name {
+      font-family: 'General Sans', sans-serif; font-weight: 600; font-size: 26px; color: #E6F1FF;
+      letter-spacing: 0.5px;
+    }
+
+    /* Tagline */
+    .tagline {
+      position: absolute; left: 48px; top: 50%; transform: translateY(-50%); margin-top: 52px;
+      font-family: 'DM Serif Display', serif; font-size: 16px; color: #8892B0; font-style: italic;
+    }
+
+    /* Context preview — how it looks on LinkedIn */
+    .context-label { font-size: 13px; color: #8892B0; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; }
+    .linkedin-mock {
+      width: 1128px; background: #fff; border-radius: 12px; overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    }
+    .linkedin-banner { width: 100%; height: 191px; position: relative; overflow: hidden; border-radius: 0; }
+    .linkedin-avatar {
+      position: absolute; bottom: -20px; left: 24px;
+      width: 148px; height: 148px; border-radius: 50%; overflow: hidden;
+      border: 4px solid #fff; background: #fff; z-index: 2;
+    }
+    .linkedin-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .linkedin-info { padding: 30px 24px 24px 200px; }
+    .linkedin-info h2 { font-family: 'General Sans', sans-serif; font-size: 22px; color: #0A0E1A; font-weight: 600; }
+    .linkedin-info .desc { font-size: 14px; color: #555; margin-top: 4px; }
+    .linkedin-info .meta { font-size: 12px; color: #888; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <p class="context-label">LinkedIn Banner — 1128 × 191 px</p>
+  <div class="banner-wrapper">
+    <div class="banner">
+      <div class="accent-bar"></div>
+      <div class="logo-area">
+        <div class="sl-mark"><span>SL</span></div>
+        <span class="company-name">Silicon Linx</span>
+      </div>
+
+      <div class="tagline">Voice-First AI Advisor for Enterprise</div>
+
+      <!-- Clean brand-only banner — no photo -->
+    </div>
+  </div>
+
+  <p class="context-label" style="margin-top: 48px;">In Context — LinkedIn Company Page</p>
+  <div class="linkedin-mock">
+    <div class="linkedin-banner" style="background:#0A0E1A;position:relative;">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#D4A853 0%,rgba(212,168,83,0.3) 60%,transparent 100%);"></div>
+      <div style="position:absolute;left:48px;top:50%;transform:translateY(-50%);display:flex;align-items:center;gap:16px;">
+        <div style="width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,#D4A853,#C49A3C);display:flex;align-items:center;justify-content:center;"><span style="font-family:'General Sans',sans-serif;font-weight:700;font-size:18px;color:#0A0E1A;">SL</span></div>
+        <span style="font-family:'General Sans',sans-serif;font-weight:600;font-size:26px;color:#E6F1FF;letter-spacing:0.5px;">Silicon Linx</span>
+      </div>
+      <div style="position:absolute;left:48px;top:50%;transform:translateY(-50%);margin-top:52px;font-family:'DM Serif Display',serif;font-size:16px;color:#8892B0;font-style:italic;">Voice-First AI Advisor for Enterprise</div>
+    </div>
+    <div style="position:relative;">
+      <div style="position:absolute;bottom:-20px;left:24px;width:148px;height:148px;border-radius:50%;overflow:hidden;border:4px solid #fff;background:#0A0E1A;z-index:2;display:flex;align-items:center;justify-content:center;">
+        <div style="width:72px;height:72px;border-radius:16px;background:linear-gradient(135deg,#D4A853,#C49A3C);display:flex;align-items:center;justify-content:center;"><span style="font-family:'General Sans',sans-serif;font-weight:700;font-size:30px;color:#0A0E1A;">SL</span></div>
+      </div>
+      <div style="padding:30px 24px 24px 200px;">
+        <h2 style="font-family:'General Sans',sans-serif;font-size:22px;color:#0A0E1A;font-weight:600;">Silicon Linx, Inc.</h2>
+        <p style="font-size:14px;color:#555;margin-top:4px;">Voice-First AI Advisor for Enterprise · AI Advisors · Digital Twins · Physical AI</p>
+        <p style="font-size:12px;color:#888;margin-top:12px;">Technology, Information and Internet · 2-10 employees</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Suri Logo System — Preview</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=General+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'General Sans', -apple-system, sans-serif; background: #0A0E1A; color: #CCD6F6; padding: 60px 40px; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: 36px; color: #CCD6F6; margin-bottom: 8px; }
+    .section-label { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #8892B0; margin-bottom: 24px; }
+
+    .preview-grid { display: flex; flex-wrap: wrap; gap: 48px; margin-bottom: 64px; }
+
+    .card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 40px; min-width: 320px; }
+    .card h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: #8892B0; margin-bottom: 24px; }
+    .card.light-bg { background: #FFFFFF; color: #0A0E1A; }
+    .card.light-bg h3 { color: #555C7A; }
+
+    .logo-row { display: flex; align-items: center; gap: 24px; }
+
+    /* Inline logo styles */
+    .wordmark { font-family: 'DM Serif Display', serif; font-size: 48px; line-height: 1; }
+    .wordmark .ai { color: #D4A853; font-style: italic; }
+    .wordmark .suri-dark { color: #0A0E1A; }
+    .wordmark .suri-light { color: #CCD6F6; }
+
+    .monogram { width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; }
+    .monogram.navy { background: #0A0E1A; border: 3px solid #D4A853; }
+    .monogram.gold { background: #D4A853; }
+    .monogram .letters { font-family: 'DM Serif Display', serif; font-size: 36px; color: #D4A853; }
+    .monogram.gold .letters { color: #0A0E1A; }
+
+    .variants { display: flex; gap: 32px; flex-wrap: wrap; margin-top: 16px; }
+    .variant { text-align: center; }
+    .variant-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #8892B0; margin-top: 12px; }
+
+    .color-swatch { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 16px; }
+    .swatch { width: 64px; height: 64px; border-radius: 8px; }
+    .swatch-info { font-size: 11px; color: #8892B0; margin-top: 6px; }
+    .swatch-info strong { color: #CCD6F6; display: block; }
+  </style>
+</head>
+<body>
+  <h1>AI Suri Logo System</h1>
+  <p class="section-label">Aligned with siliconlinx.com design system</p>
+
+  <!-- Wordmark -->
+  <div class="preview-grid">
+    <div class="card light-bg">
+      <h3>Wordmark — Light Background (LinkedIn Profile)</h3>
+      <div class="logo-row">
+        <span class="wordmark"><span class="ai">AI</span><span class="suri-dark"> Suri</span></span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Wordmark — Dark Background (Banners, Email)</h3>
+      <div class="logo-row">
+        <span class="wordmark"><span class="ai">AI</span><span class="suri-light"> Suri</span></span>
+      </div>
+    </div>
+
+    <!-- Monogram -->
+    <div class="card">
+      <h3>Monogram — Navy Circle</h3>
+      <div class="variants">
+        <div class="variant">
+          <div class="monogram navy"><span class="letters">AIS</span></div>
+          <p class="variant-label">Profile Icon</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Monogram — Gold Circle</h3>
+      <div class="variants">
+        <div class="variant">
+          <div class="monogram gold"><span class="letters">AIS</span></div>
+          <p class="variant-label">Alternate</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Color Palette Reference -->
+    <div class="card">
+      <h3>Color Palette (from siliconlinx.com)</h3>
+      <div class="color-swatch">
+        <div>
+          <div class="swatch" style="background:#0A0E1A;"></div>
+          <p class="swatch-info"><strong>Navy</strong>#0A0E1A</p>
+        </div>
+        <div>
+          <div class="swatch" style="background:#D4A853;"></div>
+          <p class="swatch-info"><strong>Gold</strong>#D4A853</p>
+        </div>
+        <div>
+          <div class="swatch" style="background:#CCD6F6;"></div>
+          <p class="swatch-info"><strong>Silver</strong>#CCD6F6</p>
+        </div>
+        <div>
+          <div class="swatch" style="background:#8892B0;"></div>
+          <p class="swatch-info"><strong>Muted</strong>#8892B0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

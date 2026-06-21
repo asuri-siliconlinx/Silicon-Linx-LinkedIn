@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" width="400" height="80">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=General+Sans:wght@400;500;600;700&amp;display=swap');
+    </style>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D4A853"/>
+      <stop offset="100%" stop-color="#C49A3C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Bracket-styled mark: [SL] -->
+  <!-- Left bracket -->
+  <rect x="0" y="12" width="4" height="48" rx="2" fill="url(#goldGrad)"/>
+  <rect x="0" y="12" width="14" height="4" rx="2" fill="url(#goldGrad)"/>
+  <rect x="0" y="56" width="14" height="4" rx="2" fill="url(#goldGrad)"/>
+
+  <!-- Right bracket -->
+  <rect x="60" y="12" width="4" height="48" rx="2" fill="url(#goldGrad)"/>
+  <rect x="50" y="12" width="14" height="4" rx="2" fill="url(#goldGrad)"/>
+  <rect x="50" y="56" width="14" height="4" rx="2" fill="url(#goldGrad)"/>
+
+  <!-- Gold fill behind SL -->
+  <rect x="8" y="16" width="48" height="40" rx="4" fill="url(#goldGrad)" opacity="0.12"/>
+
+  <!-- SL letters -->
+  <text x="32" y="47" font-family="'General Sans', sans-serif" font-size="24" font-weight="700" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="2">SL</text>
+
+  <!-- Wordmark -->
+  <text x="80" y="47" font-family="'General Sans', sans-serif" font-size="22" font-weight="600" fill="#E6F1FF" letter-spacing="1">Silicon Linx</text>
+</svg>

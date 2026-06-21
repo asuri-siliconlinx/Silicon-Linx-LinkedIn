@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email Signature — Silicon Linx</title>
+  <style>
+    /* Reset for email clients */
+    body { margin: 0; padding: 0; background: #f5f5f5; display: flex; justify-content: center; padding: 40px; }
+    table { border-collapse: collapse; }
+
+    /* Preview styling — not part of the signature */
+    .preview-wrapper { max-width: 480px; }
+    .preview-label { font-family: -apple-system, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #999; margin-bottom: 12px; }
+
+    /* Signature card */
+    .sig-table { background: #ffffff; border-radius: 8px; overflow: hidden; }
+    .sig-table td { padding: 0; }
+
+    /* Left gold accent bar */
+    .gold-bar { width: 4px; background: #D4A853; }
+
+    /* Content area */
+    .sig-content { padding: 20px 24px; }
+    .sig-name { font-family: 'General Sans', -apple-system, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 600; color: #0A0E1A; }
+    .sig-title { font-family: 'General Sans', -apple-system, Helvetica, Arial, sans-serif; font-size: 13px; color: #555C7A; margin-top: 2px; }
+    .sig-divider { height: 1px; background: #EAECEF; margin: 14px 0; }
+
+    .sig-logo-row { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+    .sig-logo-row img { display: block; }
+    .sig-logo-row .sl-mark {
+      width: 28px; height: 28px; border-radius: 6px;
+      background: linear-gradient(135deg, #D4A853, #C49A3C);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'General Sans', -apple-system, Helvetica, Arial, sans-serif;
+      font-weight: 700; font-size: 12px; color: #0A0E1A;
+      line-height: 1;
+    }
+    .sig-company { font-family: 'General Sans', -apple-system, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; color: #0A0E1A; }
+    .sig-tagline { font-family: 'General Sans', -apple-system, Helvetica, Arial, sans-serif; font-size: 12px; color: #8892B0; font-style: italic; margin-top: 2px; }
+    .sig-website { font-family: 'General Sans', -apple-system, Helvetica, Arial, sans-serif; font-size: 12px; color: #0A0E1A; text-decoration: none; margin-top: 8px; display: inline-block; }
+    .sig-website span { color: #8892B0; }
+  </style>
+</head>
+<body>
+  <div class="preview-wrapper">
+    <p class="preview-label">Email Signature — Preview</p>
+
+    <!-- Light background version -->
+    <table class="sig-table" style="margin-bottom: 32px;">
+      <tr>
+        <td class="gold-bar"></td>
+        <td class="sig-content">
+          <div class="sig-name">AI Suri</div>
+          <div class="sig-title">Founder</div>
+          <div class="sig-divider"></div>
+          <div class="sig-logo-row">
+            <div class="sl-mark">SL</div>
+            <span class="sig-company">Silicon Linx, Inc.</span>
+          </div>
+          <div class="sig-tagline">Voice-First AI Advisor for Enterprise</div>
+          <a href="https://www.siliconlinx.com" class="sig-website">siliconlinx<span>.com</span></a>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Dark background version -->
+    <table class="sig-table" style="background: #0A0E1A;">
+      <tr>
+        <td class="gold-bar"></td>
+        <td class="sig-content" style="background: #0A0E1A; border-radius: 0 8px 8px 0;">
+          <div class="sig-name" style="color: #E6F1FF;">AI Suri</div>
+          <div class="sig-title" style="color: #8892B0;">Founder</div>
+          <div class="sig-divider" style="background: rgba(255,255,255,0.08);"></div>
+          <div class="sig-logo-row">
+            <div class="sl-mark">SL</div>
+            <span class="sig-company" style="color: #E6F1FF;">Silicon Linx, Inc.</span>
+          </div>
+          <div class="sig-tagline">Voice-First AI Advisor for Enterprise</div>
+          <a href="https://www.siliconlinx.com" class="sig-website" style="color: #E6F1FF;">siliconlinx<span style="color: #8892B0;">.com</span></a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
